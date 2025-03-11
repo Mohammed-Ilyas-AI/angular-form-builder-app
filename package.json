@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "survey-angular-ui": "^2.0.0",
+    "survey-core": "^2.0.0"
+  }
+}

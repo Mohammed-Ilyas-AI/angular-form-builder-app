@@ -1,4 +1,9 @@
-<div class="h-full">
-  <h2 class="text-lg font-bold">Field Properties</h2>
-  <p>Select a field to edit its properties.</p>
+<div class="p-4">
+  <h2 class="text-lg font-semibold mb-4">Form Elements</h2>
+  <div *ngFor="let field of formFields" 
+       draggable="true" 
+       (dragstart)="onDragStart($event, field)"
+       class="cursor-pointer p-2 bg-gray-200 rounded-md mb-2">
+    {{ field.name }}
+  </div>
 </div>
